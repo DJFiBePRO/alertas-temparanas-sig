@@ -1,0 +1,65 @@
+<mxfile>
+    <diagram id="qVvd5MpQtt5qpIqKFSPM" name="Página-1">
+        <mxGraphModel dx="600" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Interfaz de usuario" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="50" width="220" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Vista" style="shape=module;jettyWidth=10;jettyHeight=4;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="110" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="13" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="13" target="14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Controlador" style="shape=module;jettyWidth=10;jettyHeight=4;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="190" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Modelo" style="shape=module;jettyWidth=10;jettyHeight=4;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="260" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Servidor&lt;br&gt;&amp;nbsp;" style="verticalAlign=top;align=left;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="50" width="240" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=none;html=1;rounded=0;align=center;verticalAlign=top;endFill=0;labelBackgroundColor=none;endSize=2;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="272.04918032786884" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="230" y="272"/>
+                            <mxPoint x="230" y="150"/>
+                        </Array>
+                        <mxPoint x="260" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="shape=requiredInterface;html=1;fontSize=11;align=center;fillColor=none;points=[];aspect=fixed;resizable=0;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;flipH=1;" vertex="1" parent="1">
+                    <mxGeometry x="254" y="145" width="5" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Servidor de Mapas&#10;(Geoserver)" style="shape=module;jettyWidth=10;jettyHeight=4;" vertex="1" parent="1">
+                    <mxGeometry x="414" y="130" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="23" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="BD(PostgreSQL)" style="shape=module;jettyWidth=10;jettyHeight=4;" vertex="1" parent="1">
+                    <mxGeometry x="414" y="240" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=classic;html=1;dashed=1;" edge="1" parent="1" source="20" target="28">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="270" as="sourcePoint"/>
+                        <mxPoint x="370" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="28" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="145" width="10" height="10" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
