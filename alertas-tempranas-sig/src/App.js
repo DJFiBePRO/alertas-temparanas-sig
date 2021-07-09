@@ -1,18 +1,22 @@
 import React from "react";
 import "./App.css";
 
-import MapView from './components/MapView'
-import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MapView from "./components/MapView";
+import NavBar from "./components/NavBar/NavBar";
+import Tabs from "./components/Tabs";
 
 export default function App() {
   return (
-    <Router>
-    <Navbar/> 
-    <Switch>
-      <Route exact path="/mapa" component={MapView}/>
-    </Switch>
-    </Router>
-  
+    <>
+      <NavBar />
+      <div class="row">
+        <div class="col-sm-2">
+          <Tabs />
+        </div>
+        <div class="col-sm-10">
+          <MapView />
+        </div>
+      </div>
+    </>
   );
 }
