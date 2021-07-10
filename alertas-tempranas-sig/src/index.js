@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootswatch/dist/minty/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "leaflet-sidebar-v2/css/leaflet-sidebar.min.css";
+import "leaflet-sidebar-v2/js/leaflet-sidebar.min.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/js/all.min.js";
+//import "leaflet-geoserver-request/src/L.Geoserver.js"
 
 ReactDOM.render(
   <React.StrictMode>
