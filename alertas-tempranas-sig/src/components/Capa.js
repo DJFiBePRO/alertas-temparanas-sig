@@ -31,23 +31,23 @@ function Capa() {
     const Wms = L.Geoserver.wms("http://localhost:8080/geoserver/wms", {
       layers: `topp:tasmania_roads`,
     }).addTo(map);
-    const Wms2 = L.Geoserver.wms("http://localhost:51035/geoserver/wms", {
+   /* const Wms2 = L.Geoserver.wms("http://localhost:51035/geoserver/wms", {
       layers: `topp:tasmania_roads`,
-    }).addTo(map);
+    }).addTo(map);*/
     const layerLegend = L.Geoserver.legend(
       "http://192.168.1.2:8080/geoserver/wms",
       {
         layers: `topp:tasmania_roads`,
       }
     ).addTo(map);
-    const layerLegend2 = L.Geoserver.legend(
+    /*const layerLegend2 = L.Geoserver.legend(
       "http://localhost:8080/geoserver/wms",
       {
         layers: `topp:tasmania_roads`,
         position: "bottomright",
       }
-    ).addTo(map);
-    console.log(layerLegend2);
+    ).addTo(map);*/
+    //console.log(layerLegend2);
 
     var legend = L.control({ position: "bottomright" });
     legend.onAdd = function (map) {
@@ -83,7 +83,7 @@ function Capa() {
       div.innerHTML = labels.join("<br>");
       return div;
     };
-    legend.addTo(map);
+    //legend.addTo(map);
 
     var legend = L.control({position: 'bottomleft'});
     legend.onAdd = function (map) {
@@ -113,7 +113,7 @@ function Capa() {
     return div;
 };
 
-legend.addTo(map);
+//legend.addTo(map);
 
   }, []);
   return null;

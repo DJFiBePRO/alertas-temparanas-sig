@@ -1,18 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Component } from "react";
 import L from "leaflet";
 import { useMap } from "react-leaflet";
 import Capa from "./Capa";
 
-function myFunction(){
-  var checkBox = document.getElementById("flexCheckDefault");
-  if (checkBox.checked === true){
-   return <Capa/>;
-  }else{
-    return console.log("No Estoy aquí");
-  }
-}
-const Capas = () => {
+export const Capas = () => {
   const map = useMap();
+  const myFunction = () => {    
+    var isChecked = document.getElementById("flexCheckDefault").checked;
+    if (isChecked) {
+      alert("checkbox esta seleccionado");
+    }
+  };
   useEffect(() => {
     const sidebar = L.control
       .sidebar({
@@ -22,15 +20,15 @@ const Capas = () => {
         position: "left", // left or right
       })
       .addTo(map);
-      
     const panelContent = {
       id: "userinfo", // UID, used to access the panel
       tab: '<i class="fa fa-bars"></i>', // content can be passed as HTML string,
       title: "<h1>CAPAS</h1>", // an optional pane header
       position: "top", // optional vertical alignment, defaults to 'top'
       pane: `
+      
       <div className="form-check">
-        <input className="form-check-input" type="checkbox" value="1"  id="flexCheckDefault" onchange="myFunction()"/>  
+        <input className="form-check-input" type="checkbox" id="flexCheckDefault" onChange={this.myFunction} />  
         <label className="form-check-label" htmlFor="flexCheckDefault">CAPA 1 </label>
       </div>
       <div className="form-check"> 
@@ -39,7 +37,7 @@ const Capas = () => {
       </div>
       `,
     };
-    
+
     sidebar.addPanel(panelContent);
     sidebar.addPanel({
       id: "ghlink",
@@ -52,6 +50,7 @@ const Capas = () => {
     });
     //sidebar.removePanel("userinfo");
   }, []);
+
   return null;
 };
 

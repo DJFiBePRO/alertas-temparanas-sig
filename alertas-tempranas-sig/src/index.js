@@ -9,13 +9,16 @@ import "leaflet-sidebar-v2/css/leaflet-sidebar.min.css";
 import "leaflet-sidebar-v2/js/leaflet-sidebar.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/js/all.min.js";
+import "react-leaflet-sidetabs/dist/index.es.js";
+
 //import "leaflet-geoserver-request/src/L.Geoserver.js"
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),  
 );
 
 // If you want to start measuring performance in your app, pass a function

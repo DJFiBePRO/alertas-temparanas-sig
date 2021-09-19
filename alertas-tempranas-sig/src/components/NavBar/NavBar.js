@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Inicio from "../Inicio";
+import Login from "../Login";
+import SidebarMap from "../SidebarMap";
+
 //import "./NavBar.css";
 
 export default class NavBar extends Component {
@@ -13,17 +16,8 @@ export default class NavBar extends Component {
           <a className="navbar-brand" href="/">
           Alertas
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
+          <SidebarMap/>
+          <Login/>
         </div>
       </nav>
       </div>
